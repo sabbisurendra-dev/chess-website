@@ -1,0 +1,47 @@
+{
+  "name": "chessvault-os",
+  "version": "1.0.0",
+  "description": "Personal Chess Knowledge Center, Chess.com Game Reviewer, Pattern-Clubbed Opening Prep, Tactics & Endgame Lab",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/copy-stockfish.mjs && next dev",
+    "prebuild": "node scripts/copy-stockfish.mjs",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "node scripts/copy-stockfish.mjs",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-content.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabbisurendra-dev/chess-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/sabbisurendra-dev/chess-website/issues"
+  },
+  "homepage": "https://github.com/sabbisurendra-dev/chess-website#readme",
+  "dependencies": {
+    "chess.js": "^1.4.0",
+    "chessground": "^9.2.1",
+    "dexie": "^4.4.7",
+    "jszip": "^3.10.2",
+    "lucide-react": "^1.77.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "stockfish": "^19.0.1",
+    "ts-fsrs": "^6.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2"
+  }
+}
